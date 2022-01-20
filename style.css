@@ -1,0 +1,459 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap");
+h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 120px;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 80px;
+  text-align: center;
+  color: #BDAE82;
+}
+
+h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  margin: 0;
+  color: #FFFFFF;
+  background-color: #000000;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  max-width: 1400px;
+  margin: auto;
+}
+
+.header {
+  background: url("img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 45pc;
+}
+
+.block_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_content {
+  margin-left: 50px;
+  margin-top: 6rem;
+}
+.header_content p {
+  width: 400px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 40px;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.btn {
+  background: #BDAE82;
+  width: 220px;
+  height: 55px;
+  border: none;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  color: #000000;
+  margin-top: 25px;
+}
+.btn:hover {
+  cursor: pointer;
+  color: #FFFFFF;
+}
+
+.dws-menu {
+  display: flex;
+  align-items: center;
+}
+.dws-menu ul {
+  display: flex;
+  list-style: none;
+}
+.dws-menu li {
+  margin-left: 30px;
+}
+.dws-menu a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 50px;
+}
+.dws-menu :hover {
+  cursor: pointer;
+}
+
+.logo :hover {
+  cursor: pointer;
+}
+
+.language {
+  display: flex;
+  margin-left: 31px;
+  align-items: center;
+}
+.language p {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 50px;
+  text-align: center;
+  color: #BDAE82;
+}
+
+.skills_card {
+  width: 320px;
+  padding: 40px 20px;
+  text-align: center;
+}
+.skills_card :hover {
+  cursor: pointer;
+}
+.skills_card p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 36px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.skills_block_card {
+  display: flex;
+}
+
+.skill {
+  width: 500px;
+  background-color: #000000;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+
+.portfolio_foto {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -25px;
+  margin-top: -25px;
+}
+.portfolio_foto img {
+  margin: 0;
+  margin-left: 25px;
+  margin-top: 25px;
+}
+.portfolio_foto img:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+.portfolio_navigation_block {
+  margin-top: -12px;
+  display: flex;
+  justify-content: center;
+  margin-left: -5px;
+  margin-bottom: 6rem;
+}
+
+.portfolio_navigation {
+  width: 220px;
+  height: 55px;
+  border: 2px solid #BDAE82;
+  box-sizing: border-box;
+  border-radius: 0;
+  margin-left: 5px;
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 50px;
+  color: #BDAE82;
+}
+.portfolio_navigation:hover {
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.lang {
+  background: rgba(189, 174, 130, 0);
+  color: #FFFFFF;
+  font-size: 20px;
+  border: none;
+  line-height: 50px;
+}
+
+.portfolio_navigation_active {
+  background-color: #BDAE82;
+  color: #000000;
+  margin-left: 8px;
+  width: 220px;
+  height: 55px;
+  border: none;
+}
+.portfolio_navigation_active p {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 55px;
+  color: #000000;
+}
+.portfolio_navigation_active p:hover {
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.contacts {
+  background: url("img/contacts.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 45pc;
+}
+
+.prise_card_block {
+  display: flex;
+  margin-left: -25px;
+  margin-bottom: 10rem;
+}
+
+.card {
+  padding: 43px;
+}
+
+.prise_card {
+  width: 450px;
+  text-align: center;
+  border: 3px solid #BDAE82;
+  box-sizing: border-box;
+  border-radius: 0px;
+  margin-left: 25px;
+}
+.prise_card :hover {
+  cursor: pointer;
+}
+.prise_card h {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 56px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.prise_card p {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 36px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.gold p {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 48px;
+  text-align: center;
+  color: #BDAE82;
+}
+
+.contact_block {
+  display: flex;
+  justify-content: end;
+  padding-top: 60px;
+}
+
+.email, .phone, .message {
+  width: 450px;
+  border: 2px solid #BDAE82;
+  box-sizing: border-box;
+  border-radius: 0;
+  background-color: rgba(189, 174, 130, 0);
+  padding: 15px;
+  color: #BDAE82;
+  font-size: 20px;
+}
+
+::placeholder {
+  color: #BDAE82;
+  font-size: 20px;
+}
+
+input, textarea {
+  outline: none;
+}
+
+.mail {
+  padding-top: 45px;
+  margin-bottom: 20px;
+}
+
+.mess {
+  padding-top: 20px;
+}
+
+.message {
+  height: 100px;
+}
+
+.contact {
+  width: 450px;
+}
+.contact h {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 80px;
+  color: #BDAE82;
+}
+
+.git {
+  display: flex;
+  margin-left: -20px;
+}
+.git p {
+  margin-left: 20px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+.git :hover {
+  cursor: pointer;
+}
+
+.footer_block {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0;
+}
+
+.footer_button {
+  display: flex;
+  align-items: center;
+}
+.footer_button svg {
+  padding: 10px;
+}
+.footer_button :hover {
+  cursor: pointer;
+}
+
+.rolling a {
+  text-decoration: none;
+}
+.rolling p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+.rolling :hover {
+  cursor: pointer;
+  color: #BDAE82;
+}
+
+.title {
+  overflow: hidden;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.title span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.title:before,
+.title:after {
+  /* Обязательно указываем пустое свойство content,
+  ** иначе псевдоэлементы не появятся на сайте */
+  content: "";
+  /* Указываем что наши линии будут строчно-блочные и
+  ** выравнивание по высоте - по центру */
+  display: inline-block;
+  vertical-align: middle;
+  /* Задаем ширину 100% и выбираем высоту линии,
+  ** в нашем примере она равна 4 пикселям */
+  width: 100%;
+  height: 2px;
+  background-color: #BDAE82;
+  position: relative;
+}
+
+.title:before {
+  /* Смещаем левую линию на 100% влево, чтобы линия
+  ** встала рядом с текстом слева */
+  margin-left: -100%;
+  left: -14px;
+}
+
+.title:after {
+  /* Смещаем правую линию на 100% вправо, чтобы
+  ** линия встала рядом с текстом справа */
+  margin-right: -100%;
+  /* Указываем в пикселях отступ линии от текста заголовка */
+  right: -14px;
+}
+
+.container {
+  position: relative;
+}
+
+/* Make the image responsive */
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+/* Style the button and place it in the middle of the container/image */
+.btnn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: rgba(85, 85, 85, 0);
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */
