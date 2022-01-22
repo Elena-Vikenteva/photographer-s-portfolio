@@ -29,6 +29,7 @@ h3 {
 
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -42,20 +43,16 @@ body {
 .wrapper {
   max-width: 1400px;
   margin: auto;
+  padding: 0 20px;
 }
 
 .header {
+  align-items: center;
   background: url("img/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   min-height: 45pc;
-}
-
-.block_header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .header_content {
@@ -82,6 +79,7 @@ body {
   text-align: center;
   color: #000000;
   margin-top: 25px;
+  font-family: inherit;
 }
 .btn:hover {
   cursor: pointer;
@@ -111,7 +109,8 @@ body {
   cursor: pointer;
 }
 
-.logo :hover {
+.logo img :hover {
+  fill: #BDAE82;
   cursor: pointer;
 }
 
@@ -130,7 +129,7 @@ body {
 }
 
 .skills_card {
-  width: 320px;
+  width: 310px;
   padding: 40px 20px;
   text-align: center;
 }
@@ -148,13 +147,13 @@ body {
 
 .skills_block_card {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .skill {
   width: 500px;
   background-color: #000000;
   text-align: center;
-  justify-content: center;
   display: flex;
 }
 
@@ -163,6 +162,7 @@ body {
   flex-wrap: wrap;
   margin-left: -25px;
   margin-top: -25px;
+  justify-content: center;
 }
 .portfolio_foto img {
   margin: 0;
@@ -171,8 +171,6 @@ body {
 }
 .portfolio_foto img:hover {
   cursor: pointer;
-  -webkit-transform: scale(1.1);
-  -o-transform: scale(1.1);
 }
 
 .portfolio_navigation_block {
@@ -238,7 +236,7 @@ body {
 }
 
 .contacts {
-  background: url("img/contacts.jpg");
+  background-image: url("img/contacts.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -247,6 +245,7 @@ body {
 
 .prise_card_block {
   display: flex;
+  flex-wrap: wrap;
   margin-left: -25px;
   margin-bottom: 10rem;
 }
@@ -260,13 +259,14 @@ body {
   text-align: center;
   border: 3px solid #BDAE82;
   box-sizing: border-box;
-  border-radius: 0px;
+  border-radius: 0;
   margin-left: 25px;
+  flex-wrap: wrap;
 }
 .prise_card :hover {
   cursor: pointer;
 }
-.prise_card h {
+.prise_card h1 {
   font-style: normal;
   font-weight: bold;
   font-size: 28px;
@@ -333,7 +333,7 @@ input, textarea {
 .contact {
   width: 450px;
 }
-.contact h {
+.contact h1 {
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
@@ -341,19 +341,26 @@ input, textarea {
   color: #BDAE82;
 }
 
-.git {
-  display: flex;
-  margin-left: -20px;
+.git a {
+  text-decoration: none;
 }
+
 .git p {
-  margin-left: 20px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
   color: #FFFFFF;
+  font-size: 18px;
+  line-height: 50px;
+  text-decoration: none;
 }
+
 .git :hover {
   cursor: pointer;
+}
+
+.nav_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .footer_block {
@@ -371,20 +378,6 @@ input, textarea {
 }
 .footer_button :hover {
   cursor: pointer;
-}
-
-.rolling a {
-  text-decoration: none;
-}
-.rolling p {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  color: #FFFFFF;
-}
-.rolling :hover {
-  cursor: pointer;
-  color: #BDAE82;
 }
 
 .title {
@@ -454,6 +447,124 @@ input, textarea {
   padding: 12px 24px;
   border: none;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 1350px) {
+  .wrapper {
+    max-width: 1024px;
+    margin: auto;
+    padding: 40px;
+  }
+
+  .skills_block_card {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .prise_card {
+    margin-top: 50px;
+  }
+
+  .prise_card_block {
+    margin-top: -20px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .wrapper {
+    max-width: 780px;
+    margin: auto;
+    padding: 40px;
+  }
+
+  .skills_block_card {
+    flex-wrap: wrap;
+  }
+
+  .prise_card_block {
+    justify-content: center;
+  }
+
+  .header_content {
+    margin-left: 0;
+  }
+
+  h1 {
+    font-size: 32px;
+    line-height: 64px;
+  }
+
+  .header_content p {
+    font-size: 20px;
+    line-height: 40px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .wrapper {
+    max-width: 480px;
+    margin: auto;
+    padding: 40px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  .contact h1 {
+    font-size: 32px;
+  }
+
+  .dws-menu {
+    display: none;
+  }
+
+  .header_content p {
+    max-width: 320px;
+  }
+
+  .portfolio_navigation_block {
+    flex-wrap: wrap;
+    margin-top: -30px;
+  }
+
+  .portfolio_navigation, .portfolio_navigation_active {
+    margin-top: 30px;
+  }
+
+  .contact_block {
+    justify-content: start;
+  }
+
+  .email, .phone, .message {
+    width: 320px;
+  }
+
+  .portfolio_foto img {
+    max-width: 320px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .wrapper {
+    max-width: 320px;
+    margin: auto;
+    padding: 40px;
+  }
+
+  .header_content p {
+    max-width: 250px;
+  }
+
+  .portfolio_foto img {
+    max-width: 280px;
+  }
+
+  .email, .phone, .message {
+    width: 250px;
+  }
+
+  .footer_block {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
